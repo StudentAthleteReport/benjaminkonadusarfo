@@ -1,0 +1,147 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Elite Recruit",
+      "archetype": "The Performance Pro",
+      "tone": "Elite, Determined, Professional, Power Five Caliber",
+      "theme_mode": "dark"
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Barlow Condensed, sans-serif",
+        "body": "Inter, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "weights": {
+        "headings": "900",
+        "body": "400",
+        "bold": "700"
+      },
+      "scale": {
+        "hero": "text-6xl md:text-8xl tracking-tighter uppercase",
+        "h1": "text-5xl md:text-6xl tracking-tight uppercase",
+        "h2": "text-4xl md:text-5xl tracking-tight uppercase",
+        "h3": "text-2xl md:text-3xl font-bold",
+        "body_lg": "text-lg leading-relaxed",
+        "body_base": "text-base leading-relaxed",
+        "caption": "text-sm tracking-wide uppercase text-muted-foreground"
+      },
+      "imports": [
+        "@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap');"
+      ]
+    },
+    "colors": {
+      "palette": {
+        "background": "#0A0A0A",
+        "surface": "#121212",
+        "surface_highlight": "#1E1E1E",
+        "primary": "#007AFF",
+        "primary_foreground": "#FFFFFF",
+        "secondary": "#FF3B30",
+        "text_primary": "#FFFFFF",
+        "text_secondary": "#A1A1AA",
+        "border": "#27272A"
+      },
+      "usage": {
+        "body_bg": "bg-[#0A0A0A]",
+        "card_bg": "bg-[#121212]",
+        "cta_primary": "bg-[#007AFF] hover:bg-[#0062C4] text-white",
+        "cta_secondary": "bg-transparent border border-[#27272A] hover:bg-[#27272A] text-white",
+        "accent_text": "text-[#007AFF]",
+        "alert": "text-[#FF3B30]"
+      }
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-12 lg:p-20",
+      "section_gap": "gap-12 md:gap-24",
+      "element_gap": "gap-4 md:gap-8",
+      "border_radius": {
+        "card": "rounded-xl",
+        "button": "rounded-full",
+        "input": "rounded-lg"
+      }
+    },
+    "visual_enhancers": {
+      "glassmorphism": "bg-black/60 backdrop-blur-xl border border-white/10",
+      "tracing_beam": "Use for 'Recruiting Status' card to highlight active recruitment.",
+      "grain_overlay": "opacity-5 pointer-events-none fixed inset-0 z-50 mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]",
+      "shadows": {
+        "card": "shadow-[0_8px_32px_rgba(0,0,0,0.2)]",
+        "glow": "shadow-[0_0_20px_rgba(0,122,255,0.3)]"
+      }
+    }
+  },
+  "layout_strategies": {
+    "homepage": {
+      "type": "Bento Grid (Mode A)",
+      "structure": "grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-8",
+      "hero_section": "Full screen height (min-h-screen), immersive video/image background, bold typography overlay.",
+      "stats_preview": "Bento grid layout showcasing key metrics (40 Yard Dash, Bench Press, GPA)."
+    },
+    "dashboard": {
+      "type": "High Density Grid (Mode B)",
+      "structure": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4",
+      "card_style": "Flat background (#121212), 1px border (#27272A), no shadow, dense information."
+    },
+    "navigation": {
+      "style": "Floating Dock or Sticky Glass Header",
+      "position": "fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-5xl rounded-full border border-white/10 bg-black/60 backdrop-blur-md px-6 py-3 flex items-center justify-between"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "h-12 px-8 rounded-full bg-[#007AFF] text-white font-bold tracking-wide hover:scale-105 transition-transform shadow-[0_0_20px_rgba(0,122,255,0.3)]",
+      "secondary": "h-12 px-8 rounded-full border border-white/20 bg-transparent text-white hover:bg-white/10 transition-colors"
+    },
+    "cards": {
+      "feature": "group relative overflow-hidden rounded-2xl border border-white/10 bg-[#121212] p-8 hover:border-[#007AFF]/50 transition-colors",
+      "stat": "flex flex-col items-center justify-center p-6 rounded-xl bg-[#1E1E1E] border border-white/5"
+    },
+    "charts": {
+      "library": "Recharts (via Shadcn)",
+      "style": "Minimalist, dark theme, hide grid lines, use gradient fills for areas."
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": {
+        "url": "https://images.unsplash.com/photo-1763494392794-a07d77898569?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxhbWVyaWNhbiUyMGZvb3RiYWxsJTIwcGxheWVyJTIwcnVubmluZyUyMG5pZ2h0JTIwZ2FtZXxlbnwwfHx8fDE3Njg2MTMwMTJ8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Football player running in rain at night",
+        "usage": "Hero section background with heavy dark overlay"
+      },
+      "stadium_bg": {
+        "url": "https://images.unsplash.com/photo-1663563624897-de8972d7ce93?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxhbWVyaWNhbiUyMGZvb3RiYWxsJTIwc3RhZGl1bSUyMGxpZ2h0cyUyMG5pZ2h0fGVufDB8fHx8MTc2ODYxMzAxNHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Stadium lights at night",
+        "usage": "Section backgrounds (parallax)"
+      },
+      "training": {
+        "url": "https://images.unsplash.com/photo-1689876593463-6678f2e8d4f2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxhdGhsZXRlJTIwZ3ltJTIwd29ya291dCUyMHdlaWdodHN8ZW58MHx8fHwxNzY4NjEzMDE3fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Gym workout overhead",
+        "usage": "Stats/Training section"
+      },
+      "coach": {
+        "url": "https://images.unsplash.com/photo-1649029476766-3dce4bf23b3f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwxfHxhbWVyaWNhbiUyMGZvb3RiYWxsJTIwY29hY2glMjBzaWRlbGluZSUyMHRhbGtpbmclMjB0byUyMHBsYXllcnxlbnwwfHx8fDE3Njg2MTMwMjh8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Coach talking to player",
+        "usage": "Testimonials/Contact section"
+      }
+    },
+    "icons": "Lucide React (default)",
+    "3d_library": "None (Focus on high-performance video/image assets instead)"
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'lucide-react', 'recharts', 'framer-motion', 'clsx', 'tailwind-merge' if not present.",
+    "2. FONTS: Add the Google Fonts import to 'index.css' immediately.",
+    "3. THEME: Force dark mode in 'tailwind.config.js' or 'index.html'. The app should NEVER be light.",
+    "4. LAYOUT: Build the Homepage using the 'Bento Grid' strategy. Do not use standard stacked sections.",
+    "5. COMPONENTS: Use Shadcn for complex interactions (Dialogs, Tabs) but style them to match the 'Performance Pro' aesthetic (remove rounded corners if needed, darken backgrounds).",
+    "6. MOTION: Add 'framer-motion' entrance animations to all sections. Stagger children elements.",
+    "7. ACCESSIBILITY: Ensure all text on image backgrounds has sufficient contrast. Use 'bg-black/50' overlays where necessary."
+  ],
+  "universal_guidelines": [
+    "Avoid generic 'AI slop' designs (centered text, standard Bootstrap layouts).",
+    "Use 2-3x more spacing than typical.",
+    "Every interaction needs a micro-animation.",
+    "Do not use gradients for text unless it's a very subtle shine effect.",
+    "Use 'data-testid' for all interactive elements."
+  ]
+}

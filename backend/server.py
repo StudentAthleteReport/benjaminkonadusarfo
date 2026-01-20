@@ -381,7 +381,7 @@ async def export_player_profile_pdf():
 def get_sample_athlete():
     return {
         "id": "sample-001",
-        "full_name": "Benjamin Konadu-Sarfo",
+        "full_name": "Benjamin Konadu",
         "graduation_year": 2028,
         "positions": ["Safety", "Cornerback"],
         "height": "6'1\"",

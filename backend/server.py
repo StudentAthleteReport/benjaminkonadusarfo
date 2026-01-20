@@ -381,24 +381,24 @@ async def export_player_profile_pdf():
 def get_sample_athlete():
     return {
         "id": "sample-001",
-        "full_name": "Marcus 'MJ' Johnson Jr.",
-        "graduation_year": 2026,
+        "full_name": "Benjamin Konadu-Sarfo",
+        "graduation_year": 2028,
         "positions": ["Safety", "Cornerback"],
         "height": "6'1\"",
-        "weight": 185,
+        "weight": 175,
         "wingspan": "6'4\"",
-        "high_school": "St. Augustine Preparatory Academy",
-        "city": "Richmond",
+        "high_school": "St. James Performance Academy",
+        "city": "Springfield",
         "state": "VA",
-        "jersey_number": 7,
-        "gpa": 3.8,
+        "jersey_number": 27,
+        "gpa": 3.5,
         "sat_score": 1280,
         "act_score": 28,
         "ncaa_id": "2609284751",
         "hudl_url": "https://www.hudl.com/profile/18291837",
         "youtube_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "twitter_handle": "MJohnson_DB7",
-        "instagram_handle": "mj_johnson7",
+        "twitter_handle": "BenjiK_DB27",
+        "instagram_handle": "Benji_K",
         "profile_image": "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=400",
         "highlight_image": "https://images.unsplash.com/photo-1763494392794-a07d77898569?w=800"
     }
@@ -407,7 +407,7 @@ def get_sample_measurables():
     return {
         "id": "meas-001",
         "athlete_id": "sample-001",
-        "forty_yard": 4.52,
+        "forty_yard": 4.7,
         "shuttle": 4.18,
         "vertical_jump": 36.5,
         "broad_jump": "10'2\"",
@@ -538,7 +538,7 @@ def get_sample_contacts():
             "title": "Head Football Coach",
             "email": "rwilliams@staugprep.edu",
             "phone": "(804) 555-0147",
-            "school": "St. Augustine Preparatory Academy",
+            "school": "St. James Performance Academy",
             "photo_url": "https://images.unsplash.com/photo-1649029476766-3dce4bf23b3f?w=200"
         },
         {
@@ -548,7 +548,7 @@ def get_sample_contacts():
             "title": "Defensive Backs Coach",
             "email": "mthompson@staugprep.edu",
             "phone": "(804) 555-0152",
-            "school": "St. Augustine Preparatory Academy"
+            "school": "St. James Performance Academy"
         },
         {
             "id": "contact-003",
@@ -565,14 +565,14 @@ def get_sample_testimonials():
         {
             "id": "test-001",
             "athlete_id": "sample-001",
-            "quote": "Marcus is the most football-intelligent defensive back I've coached in 20 years. His film study habits and ability to diagnose plays pre-snap sets him apart. He's a coach on the field.",
+            "quote": "Benjamin is among the most football-intelligent defensive back I've coached in 20 years. His film study habits and ability to diagnose plays pre-snap sets him apart. He's a coach on the field.",
             "author_name": "Coach Robert Williams",
-            "author_title": "Head Football Coach, St. Augustine Prep"
+            "author_title": "Head Football Coach, St. James Performance Academy"
         },
         {
             "id": "test-002",
             "athlete_id": "sample-001",
-            "quote": "MJ's work ethic in the weight room and on the practice field is elite. He arrived as a freshman wanting to start and put in the work to make it happen by sophomore year. Natural leader.",
+            "quote": "Benjamin's work ethic in the weight room and on the practice field is elite. He arrived as a freshman wanting to start and put in the work to make it happen by sophomore year. Natural leader.",
             "author_name": "Coach Marcus Thompson",
             "author_title": "Defensive Backs Coach"
         },
@@ -581,7 +581,7 @@ def get_sample_testimonials():
             "athlete_id": "sample-001",
             "quote": "Outstanding young man with impeccable character. Maintains a 3.8 GPA while leading our community service initiatives. Any program would be lucky to have him.",
             "author_name": "Dr. Patricia Coleman",
-            "author_title": "Academic Dean, St. Augustine Prep"
+            "author_title": "Academic Dean, St. James Performance Academy"
         }
     ]
 
